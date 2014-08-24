@@ -17,16 +17,13 @@ makeCacheMatrix <- function(x = matrix()) {
 +     list(set=set, get=get,
 +       setmatrix=setmatrix,
 +       getmatrix=getmatrix)
- 
-
 }
 
 
 ## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
-        
+
 +         m<-x$getmatrix()  
 +           if(!is.null(m)){ #if there is a cache the inverse has been previously calculated
 +    message("getting cached data") # sent message indicating this is just cache 
