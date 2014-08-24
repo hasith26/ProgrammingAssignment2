@@ -19,9 +19,6 @@ makeCacheMatrix <- function(x = matrix()) {
 +       getmatrix=getmatrix)
 }
 
-
-## Write a short comment describing this function
-
 cacheSolve <- function(x, ...) {
 
 +         m<-x$getmatrix()  
